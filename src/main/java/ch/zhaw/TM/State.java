@@ -5,13 +5,33 @@ public class State {
 	private char read;
 	private int nextState;
 	private char write;
-	private char direction;
+	private int direction;
 	
-	public State(int state, char read, int nextState, char write, char direction) {
+	public State(int state, char read, int nextState, char write, int direction) {
 		this.state= state;
 		this.read= read;
 		this.nextState= nextState;
 		this.write= write;
 		this.direction= direction;
+	}
+	
+	public int getState() {
+		return state;
+	}
+	
+	public int getnextState() {
+		return nextState;
+	}
+	
+	public char getRead() {
+		return read;
+	}
+	
+	public char getWrite() {
+		return write;
+	}
+	
+	public int getDirection() {
+		return direction;
 	}
 }

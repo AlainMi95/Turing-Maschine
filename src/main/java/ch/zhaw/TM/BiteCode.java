@@ -28,12 +28,12 @@ public class BiteCode {
 		return code.length()-1;
 	}
 	
-	private char detDirection (String code) {
-		char retVal='0';
+	private int detDirection (String code) {
+		int retVal= 0;
 		if (code.equals("00")) {
-			retVal= 'R';
+			retVal= 1;
 		} else if(code.equals("0")){
-			retVal= 'L';
+			retVal= -1;
 		}
 		return retVal;
 	}	
