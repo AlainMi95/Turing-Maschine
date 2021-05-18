@@ -37,7 +37,7 @@ public class Calculation {
     private State findState() {
     	State state= null;
     	for (State st: states) {
-    		if (st.getState()== stateNr && st.getRead()==  band[readerPos]) {
+    		if (st.getState()== stateNr && st.getRead()== band[readerPos]) {
     			state= st;
     		}
     	}  	  	
