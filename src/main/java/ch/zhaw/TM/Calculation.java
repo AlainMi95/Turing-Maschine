@@ -26,7 +26,7 @@ public class Calculation {
     	}
     }
     
-    private void calculate() {
+    public void calculate() {
     	while(findState()!=null) {
     		State actState= findState();
     		band[readerPos]=actState.getWrite();
