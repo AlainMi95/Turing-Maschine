@@ -34,4 +34,16 @@ public class State {
 	public int getDirection() {
 		return direction;
 	}
+	
+	public char getDirLetter() {
+		if (direction==1) {
+			return 'R';
+		} else {
+			return 'L';
+		}
+	}
+	
+	public void print() {
+		System.out.println("q"+state+", " +read +"=> q"+ nextState+ ", "+write+ ", " +getDirLetter());
+	}
 }
